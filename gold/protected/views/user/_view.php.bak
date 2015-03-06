@@ -1,0 +1,227 @@
+<?php
+/* @var $this UserController */
+/* @var $data User */
+?>
+
+<div class="view">
+
+	<b><?php echo CHtml::encode($data->getAttributeLabel('EPNO')); ?>:</b>
+	<?php echo CHtml::link(CHtml::encode($data->EPNO), array('view', 'id'=>$data->EPNO)); ?>
+	<br />
+
+	<b><?php echo CHtml::encode($data->getAttributeLabel('EPID')); ?>:</b>
+	<?php echo CHtml::encode($data->EPID); ?>
+	<br />
+
+	<b><?php echo CHtml::encode($data->getAttributeLabel('EPNAME')); ?>:</b>
+	<?php echo CHtml::encode($data->EPNAME); ?>
+	<br />
+
+	<b><?php echo CHtml::encode($data->getAttributeLabel('NICKNAME')); ?>:</b>
+	<?php echo CHtml::encode($data->NICKNAME); ?>
+	<br />
+
+	<b><?php echo CHtml::encode($data->getAttributeLabel('EMAIL')); ?>:</b>
+	<?php echo CHtml::encode($data->EMAIL); ?>
+	<br />
+
+	<b><?php echo CHtml::encode($data->getAttributeLabel('CELLPHONE')); ?>:</b>
+	<?php echo CHtml::encode($data->CELLPHONE); ?>
+	<br />
+
+	<?php /*
+	<b><?php echo CHtml::encode($data->getAttributeLabel('SCHOOLNAME')); ?>:</b>
+	<?php echo CHtml::encode($data->SCHOOLNAME); ?>
+	<br />
+
+	<b><?php echo CHtml::encode($data->getAttributeLabel('CRAM')); ?>:</b>
+	<?php echo CHtml::encode($data->CRAM); ?>
+	<br />
+
+	<b><?php echo CHtml::encode($data->getAttributeLabel('ADDRESS_CITY')); ?>:</b>
+	<?php echo CHtml::encode($data->ADDRESS_CITY); ?>
+	<br />
+
+	<b><?php echo CHtml::encode($data->getAttributeLabel('ADDRESS_DISTRICT')); ?>:</b>
+	<?php echo CHtml::encode($data->ADDRESS_DISTRICT); ?>
+	<br />
+
+	<b><?php echo CHtml::encode($data->getAttributeLabel('ADDRESS')); ?>:</b>
+	<?php echo CHtml::encode($data->ADDRESS); ?>
+	<br />
+
+	<b><?php echo CHtml::encode($data->getAttributeLabel('DPNO')); ?>:</b>
+	<?php echo CHtml::encode($data->DPNO); ?>
+	<br />
+
+	<b><?php echo CHtml::encode($data->getAttributeLabel('POSITION')); ?>:</b>
+	<?php echo CHtml::encode($data->POSITION); ?>
+	<br />
+
+	<b><?php echo CHtml::encode($data->getAttributeLabel('DUTYNAME')); ?>:</b>
+	<?php echo CHtml::encode($data->DUTYNAME); ?>
+	<br />
+
+	<b><?php echo CHtml::encode($data->getAttributeLabel('RANKNAME')); ?>:</b>
+	<?php echo CHtml::encode($data->RANKNAME); ?>
+	<br />
+
+	<b><?php echo CHtml::encode($data->getAttributeLabel('UPEPNO')); ?>:</b>
+	<?php echo CHtml::encode($data->UPEPNO); ?>
+	<br />
+
+	<b><?php echo CHtml::encode($data->getAttributeLabel('INDATE')); ?>:</b>
+	<?php echo CHtml::encode($data->INDATE); ?>
+	<br />
+
+	<b><?php echo CHtml::encode($data->getAttributeLabel('ONJOB')); ?>:</b>
+	<?php echo CHtml::encode($data->ONJOB); ?>
+	<br />
+
+	<b><?php echo CHtml::encode($data->getAttributeLabel('IDCARDNO')); ?>:</b>
+	<?php echo CHtml::encode($data->IDCARDNO); ?>
+	<br />
+
+	<b><?php echo CHtml::encode($data->getAttributeLabel('BIRTHDAY')); ?>:</b>
+	<?php echo CHtml::encode($data->BIRTHDAY); ?>
+	<br />
+
+	<b><?php echo CHtml::encode($data->getAttributeLabel('EPKIND')); ?>:</b>
+	<?php echo CHtml::encode($data->EPKIND); ?>
+	<br />
+
+	<b><?php echo CHtml::encode($data->getAttributeLabel('CLASS')); ?>:</b>
+	<?php echo CHtml::encode($data->CLASS); ?>
+	<br />
+
+	<b><?php echo CHtml::encode($data->getAttributeLabel('INDAY')); ?>:</b>
+	<?php echo CHtml::encode($data->INDAY); ?>
+	<br />
+
+	<b><?php echo CHtml::encode($data->getAttributeLabel('OUTDAY')); ?>:</b>
+	<?php echo CHtml::encode($data->OUTDAY); ?>
+	<br />
+
+	<b><?php echo CHtml::encode($data->getAttributeLabel('YEAR')); ?>:</b>
+	<?php echo CHtml::encode($data->YEAR); ?>
+	<br />
+
+	<b><?php echo CHtml::encode($data->getAttributeLabel('OADD')); ?>:</b>
+	<?php echo CHtml::encode($data->OADD); ?>
+	<br />
+
+	<b><?php echo CHtml::encode($data->getAttributeLabel('NADD')); ?>:</b>
+	<?php echo CHtml::encode($data->NADD); ?>
+	<br />
+
+	<b><?php echo CHtml::encode($data->getAttributeLabel('TEL')); ?>:</b>
+	<?php echo CHtml::encode($data->TEL); ?>
+	<br />
+
+	<b><?php echo CHtml::encode($data->getAttributeLabel('MANAGER')); ?>:</b>
+	<?php echo CHtml::encode($data->MANAGER); ?>
+	<br />
+
+	<b><?php echo CHtml::encode($data->getAttributeLabel('POSTPOWER')); ?>:</b>
+	<?php echo CHtml::encode($data->POSTPOWER); ?>
+	<br />
+
+	<b><?php echo CHtml::encode($data->getAttributeLabel('OLDYEARS')); ?>:</b>
+	<?php echo CHtml::encode($data->OLDYEARS); ?>
+	<br />
+
+	<b><?php echo CHtml::encode($data->getAttributeLabel('SEX')); ?>:</b>
+	<?php echo CHtml::encode($data->SEX); ?>
+	<br />
+
+	<b><?php echo CHtml::encode($data->getAttributeLabel('FORCEREAD')); ?>:</b>
+	<?php echo CHtml::encode($data->FORCEREAD); ?>
+	<br />
+
+	<b><?php echo CHtml::encode($data->getAttributeLabel('NICKCHK')); ?>:</b>
+	<?php echo CHtml::encode($data->NICKCHK); ?>
+	<br />
+
+	<b><?php echo CHtml::encode($data->getAttributeLabel('school_city')); ?>:</b>
+	<?php echo CHtml::encode($data->school_city); ?>
+	<br />
+
+	<b><?php echo CHtml::encode($data->getAttributeLabel('school_district')); ?>:</b>
+	<?php echo CHtml::encode($data->school_district); ?>
+	<br />
+
+	<b><?php echo CHtml::encode($data->getAttributeLabel('pay_attention')); ?>:</b>
+	<?php echo CHtml::encode($data->pay_attention); ?>
+	<br />
+
+	<b><?php echo CHtml::encode($data->getAttributeLabel('draw_attention')); ?>:</b>
+	<?php echo CHtml::encode($data->draw_attention); ?>
+	<br />
+
+	<b><?php echo CHtml::encode($data->getAttributeLabel('describe')); ?>:</b>
+	<?php echo CHtml::encode($data->describe); ?>
+	<br />
+
+	<b><?php echo CHtml::encode($data->getAttributeLabel('POINT')); ?>:</b>
+	<?php echo CHtml::encode($data->POINT); ?>
+	<br />
+
+	<b><?php echo CHtml::encode($data->getAttributeLabel('P_SIDS')); ?>:</b>
+	<?php echo CHtml::encode($data->P_SIDS); ?>
+	<br />
+
+	<b><?php echo CHtml::encode($data->getAttributeLabel('buy_point')); ?>:</b>
+	<?php echo CHtml::encode($data->buy_point); ?>
+	<br />
+
+	<b><?php echo CHtml::encode($data->getAttributeLabel('used_point')); ?>:</b>
+	<?php echo CHtml::encode($data->used_point); ?>
+	<br />
+
+	<b><?php echo CHtml::encode($data->getAttributeLabel('dis_bday')); ?>:</b>
+	<?php echo CHtml::encode($data->dis_bday); ?>
+	<br />
+
+	<b><?php echo CHtml::encode($data->getAttributeLabel('dis_mail')); ?>:</b>
+	<?php echo CHtml::encode($data->dis_mail); ?>
+	<br />
+
+	<b><?php echo CHtml::encode($data->getAttributeLabel('dis_ceil')); ?>:</b>
+	<?php echo CHtml::encode($data->dis_ceil); ?>
+	<br />
+
+	<b><?php echo CHtml::encode($data->getAttributeLabel('dis_address')); ?>:</b>
+	<?php echo CHtml::encode($data->dis_address); ?>
+	<br />
+
+	<b><?php echo CHtml::encode($data->getAttributeLabel('dis_school')); ?>:</b>
+	<?php echo CHtml::encode($data->dis_school); ?>
+	<br />
+
+	<b><?php echo CHtml::encode($data->getAttributeLabel('websid')); ?>:</b>
+	<?php echo CHtml::encode($data->websid); ?>
+	<br />
+
+	<b><?php echo CHtml::encode($data->getAttributeLabel('webid')); ?>:</b>
+	<?php echo CHtml::encode($data->webid); ?>
+	<br />
+
+	<b><?php echo CHtml::encode($data->getAttributeLabel('webgid')); ?>:</b>
+	<?php echo CHtml::encode($data->webgid); ?>
+	<br />
+
+	<b><?php echo CHtml::encode($data->getAttributeLabel('COMBINDEPNO')); ?>:</b>
+	<?php echo CHtml::encode($data->COMBINDEPNO); ?>
+	<br />
+
+	<b><?php echo CHtml::encode($data->getAttributeLabel('webepno')); ?>:</b>
+	<?php echo CHtml::encode($data->webepno); ?>
+	<br />
+
+	<b><?php echo CHtml::encode($data->getAttributeLabel('navigate')); ?>:</b>
+	<?php echo CHtml::encode($data->navigate); ?>
+	<br />
+
+	*/ ?>
+
+</div>

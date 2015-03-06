@@ -1,0 +1,230 @@
+<?php
+?>
+<?php 
+include('connect.php');
+?>
+<!DOCTYPE html PUBLIC "-//W3C//DTD HTML 4.01 Transitional//EN" "http://www.w3.org/TR/html4/loose.dtd">
+<html>
+<head>
+<meta http-equiv="Content-Type" content="text/html; charset=utf-8">
+<title>操作流程</title>
+<script type="text/javascript" src="./js/jquery.min.js"></script>
+<script type="text/javascript" src="./js/ui/jquery-ui-1.10.3/ui/jquery-ui.js"></script>
+
+<script type="text/javascript" charset="utf-8"  src="./js/iftex_function.js"></script> 
+<script type="text/javascript" charset="utf-8"  src="./weibo_files/exposure.js"></script>
+<script type="text/javascript" charset="utf-8"  src="./weibo_files/wbad.js"></script>
+<!-- 
+<script type="text/javascript" charset="utf-8"  src="./weibo_files/suda.js"></script>
+
+<script type="text/javascript" src="./js/ui/jquery.ui.core.js"></script>
+<script type="text/javascript" src="./js/ui/jquery.ui.widget.js"></script>
+<script type="text/javascript" src="./js/ui/jquery.ui.position.js"></script>
+<script type="text/javascript" src="./js/ui/jquery.ui.autocomplete.js"></script>
+沒用!!?
+<script type="text/javascript" src="./js/jquery.js"></script>
+ -->
+<script type="text/javascript">
+    (function(){var l=location;var r=new RegExp('^(?:([A-Za-z]{1,5}):(\\/{2,3}))?('+l.hostname.replace(/\./g,'\\.')+')?(?::(\\d+))?(?:\\/([^?#]*))?(?:\\?([^#]*))?(?:#(.*))?$');var s;((s=(l=l.toString()).indexOf('#!')) != -1 && r.test(l=l.substr(s+2))) ? location.replace(l) : 0;})();
+</script> 
+<script type="text/javascript">
+try{document.execCommand("BackgroundImageCache", false, true);}catch(e){}
+</script> 
+
+<script type="Text/JavaScript">
+//分頁用
+$(document).ready(function(){
+	$('.S-FIXED').hover(
+			function()
+			{
+				$(this).css('display','block'); 
+			},
+			function()
+			{
+				$(this).css('display','none'); 
+			}
+		);
+})
+</script>
+  
+<link rel="stylesheet" href="./js/ui/jquery-ui-1.10.3/themes/base/jquery-ui.css">
+<?php 
+print('<LINK TYPE="text/css" REL="STYLESHEET" HREF="'.$css_user_file.'">');
+?>
+<!-- <link rel="stylesheet" href="./css/ui/style.css" />
+<link rel="stylesheet" href="css\jquery-autocomplete\jquery.autocomplete.css">
+ -->
+<style type="text/css">
+/* 讚的數量顯示 */
+.str_countlike {
+    cursor:pointer;
+}
+</style>
+    <link href="./weibo_files/main.css" type="text/css" rel="stylesheet" charset="utf-8">                        
+    <link href="./weibo_files/home_frame.css" type="text/css" rel="stylesheet" charset="utf-8">
+<!--     <link href="./weibo_files/WB_global_nav.css" type="text/css" rel="stylesheet" charset="utf-8"> -->
+    <link href="./weibo_files/WB_left_nav.css" type="text/css" rel="stylesheet" charset="utf-8">
+    <link href="./weibo_files/home_extra.css" type="text/css" rel="stylesheet" charset="utf-8">
+    <link href="./weibo_files/home_A.css" type="text/css" rel="stylesheet" charset="utf-8">
+    <link href="./weibo_files/send_weibo.css" type="text/css" rel="stylesheet" charset="utf-8">
+    <link href="./weibo_files/setup_template.css" type="text/css" rel="stylesheet" charset="utf-8">
+    <link href="./weibo_files/feed_function.css" type="text/css" rel="stylesheet" charset="utf-8">
+    <link href="./weibo_files/right_thirdpart.css" type="text/css" rel="stylesheet" charset="utf-8">
+    <link href="./weibo_files/activities_list.css" type="text/css" rel="stylesheet" charset="utf-8">
+    <link href="./weibo_files/profile.css" type="text/css" rel="stylesheet" charset="utf-8">
+    
+    <!-- 
+    <link putoff="./weibo_files/home_extra.css?version=c86d3b2625d57455" 
+    includes="style/css/module/combination/send_weibo.css?version=c86d3b2625d57455|
+    style/css/module/layer/setup_template.css?version=c86d3b2625d57455|
+    style/css/module/combination/feed_function.css?version=c86d3b2625d57455|
+    style/css/module/combination/right_thirdpart.css?version=c86d3b2625d57455|
+    style/css/module/list/activities_list.css?version=c86d3b2625d57455|
+    style/css/module/global/WB_global_nav.css?version=c86d3b2625d57455|
+    style/css/module/global/WB_left_nav.css?version=c86d3b2625d57455|
+    style/css/patch/content/profile.css?version=c86d3b2625d57455" 
+    href="./weibo_files/home_A.css" type="text/css" rel="stylesheet" charset="utf-8">
+     -->
+            <link href="./weibo_files/skin_CHT.css" type="text/css" rel="stylesheet" charset="utf-8">
+		        <title><?=$LNK_SYSNAME?>_<?=$LNK_CUSTOM?></title>
+
+
+
+<link rel="Stylesheet" type="text/css" charset="utf-8" href="./weibo_files/layer_userguide_brief.css" id="FM_link_FM_13655621631969">
+<div style="position: absolute; top: -9999px; left: -9999px;"></div>
+
+<link rel="Stylesheet" type="text/css" charset="utf-8" href="./weibo_files/wbim.css"><div style="position: absolute; top: -9999px; left: -9999px;"></div>
+	    <script>
+	    function getElementsByClass( searchClass, domNode, tagName) { 
+	    	 if (domNode == null) domNode = document;
+	    	 if (tagName == null) tagName = '*';
+	    	 var el = new Array();
+	    	 var tags = domNode.getElementsByTagName(tagName);
+	    	 var tcl = " "+searchClass+" ";
+	    	 for(i=0,j=0; i<tags.length; i++) { 
+	    	  var test = " " + tags[i].className + " ";
+	    	  if (test.indexOf(tcl) != -1) 
+	    	   el[j++] = tags[i];
+	    	 } 
+	    	 return el;
+	    	} 
+
+	    	function SearchClassSwitch(classname)
+	    	{
+	    	 var cssArray=getElementsByClass(classname);
+	    	 for(i=0; i<cssArray.length; i++) 
+	    	 {
+	    	  if (cssArray[i].style.display=='')
+	    	   cssArray[i].style.display = 'none';
+	    	  else
+	    	   cssArray[i].style.display = '';
+	    	 }
+	    	}
+
+	    </script>
+</head>
+<body>
+
+<?php 
+/*
+print('<script>
+
+                                $(document).ready(function(){
+                                    $("#'.$menuid1.'").bind("mouseover",function(){
+                                        $(this).addClass("open");
+                                        $(this).addClass("W_arrow_turn");
+                                        document.getElementById("'.$menuid1.'_list").style.display="block";
+                                    }).bind("mouseout",function(){
+                                        $(this).removeClass("open");
+                                        $(this).removeClass("W_arrow_turn");
+                                        document.getElementById("'.$menuid1.'_list").style.display="none";
+                                    });
+                                });
+
+                            </script>
+                            ');
+*/
+
+
+
+
+
+
+
+//找出查詢人員EPID
+if($LNK_USERID!=""){
+    $str = 'Select EPID,SCHOOLNAME,CRAM,DPNO,EPNAME,NICKNAME,NICKCHK,PAY_ATTENTION,DRAW_ATTENTION from '.$L_EMPLOY.' WHERE EPNO = \''.$LNK_USERID.'\' ';
+    $dbobj0->query($str);
+    if($dbobj0->next_record()){
+        $f_epid = $dbobj0->f('EPID');
+        $f_schoolname = $dbobj0->f('SCHOOLNAME');
+        $f_cram = $dbobj0->f('CRAM');
+        $f_dpno = $dbobj0->f('DPNO');
+        $tmp_username = $dbobj0->f('EPNAME');
+        $tmp_nickchk    = $dbobj0->f('NICKCHK');
+        $tmp_nickname    = $dbobj0->f('NICKNAME');
+        $tmp_payattention   = $dbobj0->f('PAY_ATTENTION');
+        $tmp_drawattention  = $dbobj0->f('DRAW_ATTENTION');
+    }
+    else $tmp_username = null;
+     
+    if($tmp_nickchk) $tmp_username = $tmp_nickname;
+    else $tmp_username = $tmp_username;
+
+    if('001'==$f_dpno){
+        $tmp_dpname='同學';
+    }else if('003'==$f_dpno){
+        $tmp_dpname='';
+    }else{
+        $tmp_dpname='老師';
+    }
+
+    if(''==$tmp_payattention) $a_payattention='';
+    else $a_payattention = explode(',',$tmp_payattention);
+
+    $sql_payattention = str_replace(",","','",','.$tmp_payattention);
+
+    if(''==$tmp_drawattention) $atmp_drawattention='';
+    else $atmp_drawattention = explode(',',$tmp_drawattention);
+
+     
+}
+?>
+<table width="100%" cellpadding="0" cellspacing="0" border="0"><tbody>
+<tr><td align="center">
+<table  width="<?=$table_width?>"  border="0" cellpadding="0" cellspacing="0">
+<?php
+include('include/pl_content_top.php');
+
+?>
+<table width="995" border="0" cellpadding="0" cellspacing="0">
+<tr><td align="left">
+	
+
+<pre><font size="6">操作流程</font>
+<font size="5">
+老師:
+【註冊】>登入後畫面可看到公開、同補習班、本人的考卷跟題目(依建置時間排列)
+　　　　>想出考卷>【出題系統】>【新增一張考卷】>【新增一題題目】>【用現有題目制作一張考卷】
+　　　　>想看學生成績>【線上測驗】>【成績查詢】
+　　　　>想考考卷>【線上測驗】>【評量練習】或是首頁點【考試去】
+　　　　>想看某個老師出的題目>上方搜索欄輸入老師名字
+
+學生:
+【註冊】>登入後畫面可看到公開、關注老師的題目
+　　　　>想考考卷>【線上測驗】>【評量練習】或是首頁點【考試去】
+　　　　>想看之前考過的成績>【線上測驗】>【成績查詢】
+　　　　>想看某個老師出的題目>上方搜索欄輸入老師名字
+</font>
+</pre>
+
+</td></tr></table>
+</table>
+</td></tr></tbody></table>
+
+<?php 
+include('include/global_footer.php');
+include('disconnect.php');
+?>
+</body>
+</html>

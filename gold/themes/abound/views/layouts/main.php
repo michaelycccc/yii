@@ -29,7 +29,7 @@
 	  $cs->registerCssFile($baseUrl.'/css/abound.css');
 	  //$cs->registerCssFile($baseUrl.'/css/style-blue.css');
 	  ?>
-    <!--[if lt IE 9]>
+	  <!--[if lt IE 9]>
       <link rel="stylesheet" type="text/css" media="all" href="abound-ie.css"/>
     <![endif]-->
       <!-- styles for style switcher  //blue-->
@@ -42,7 +42,7 @@
         <link rel="alternate stylesheet" type="text/css" media="screen" title="style7" href="<?php echo $baseUrl;?>/css/style-red.css" />
 	  <?php
 	  $cs->registerScriptFile($baseUrl.'/js/bootstrap.min.js');
-	  $cs->registerScriptFile($baseUrl.'/js/plugins/jquery.sparkline.js');
+	  $cs->registerScriptFile($baseUrl.'/js/plugins/excanvas.js');
 	  $cs->registerScriptFile($baseUrl.'/js/plugins/jquery.sparkline.js');
 	  $cs->registerScriptFile($baseUrl.'/js/plugins/jquery.flot.min.js');
 	  $cs->registerScriptFile($baseUrl.'/js/plugins/jquery.flot.pie.min.js');

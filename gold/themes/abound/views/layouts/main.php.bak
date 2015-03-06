@@ -3,7 +3,7 @@
 <html lang="en">
   <head>
     <meta charset="utf-8">
-    <title>ª÷µP±Ð®v</title>
+    <title>é‡‘ç‰Œæ•™å¸«</title>
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <meta name="description" content="Free yii themes, free web application theme">
     <meta name="author" content="Webapplicationthemes.com">
@@ -29,8 +29,11 @@
 	  $cs->registerCssFile($baseUrl.'/css/abound.css');
 	  //$cs->registerCssFile($baseUrl.'/css/style-blue.css');
 	  ?>
-      <!-- styles for style switcher -->
-      	<link rel="stylesheet" type="text/css" href="<?php echo $baseUrl;?>/css/style-blue.css" />
+	  <!--[if lt IE 9]>
+      <link rel="stylesheet" type="text/css" media="all" href="abound-ie.css"/>
+    <![endif]-->
+      <!-- styles for style switcher  //blue-->
+        <link rel="stylesheet" type="text/css" href="<?php echo $baseUrl;?>/css/style-red.css" />
         <link rel="alternate stylesheet" type="text/css" media="screen" title="style2" href="<?php echo $baseUrl;?>/css/style-brown.css" />
         <link rel="alternate stylesheet" type="text/css" media="screen" title="style3" href="<?php echo $baseUrl;?>/css/style-green.css" />
         <link rel="alternate stylesheet" type="text/css" media="screen" title="style4" href="<?php echo $baseUrl;?>/css/style-grey.css" />
@@ -39,6 +42,7 @@
         <link rel="alternate stylesheet" type="text/css" media="screen" title="style7" href="<?php echo $baseUrl;?>/css/style-red.css" />
 	  <?php
 	  $cs->registerScriptFile($baseUrl.'/js/bootstrap.min.js');
+	  $cs->registerScriptFile($baseUrl.'/js/plugins/excanvas.js');
 	  $cs->registerScriptFile($baseUrl.'/js/plugins/jquery.sparkline.js');
 	  $cs->registerScriptFile($baseUrl.'/js/plugins/jquery.flot.min.js');
 	  $cs->registerScriptFile($baseUrl.'/js/plugins/jquery.flot.pie.min.js');

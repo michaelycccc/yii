@@ -26,10 +26,15 @@ body {
   border-radius:5px;
 }
 
-/* Desktops and laptops -----------1224 */
+/* Desktops and laptops -----------100to50 */
 @media only screen 
 and (min-width : 979px) {
-	.container-fluid{padding-top: 100px;}
+	.container-fluid{padding-top: 50px;}
+}
+
+@media only screen 
+and (min-width : 1224px) {
+	.container-fluid{padding-top: 50px;}
 	.navbar .brand {margin-left:-90px;}
 	.style-switcher{margin-left:-70px;}
 }
@@ -37,7 +42,7 @@ and (min-width : 979px) {
 /* Large screens ----------- */
 @media only screen 
 and (min-width : 1824px) {
-	.container-fluid{padding-top: 100px;}
+	.container-fluid{padding-top: 50px;}
 	.navbar .brand {margin-left:-90px;}
 	.style-switcher{margin-left:-70px;}
 }

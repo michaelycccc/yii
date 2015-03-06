@@ -4,9 +4,9 @@
   <head>
     <meta charset="utf-8">
     <title>金牌教師</title>
-    <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <meta name="description" content="Free yii themes, free web application theme">
-    <meta name="author" content="Webapplicationthemes.com">
+    <meta name="keywords" content="校長參謀,數位化,線上測驗,金牌教師,政龍,政龍文教">
+		<meta name="description" content="學生線上測驗,立即知道測驗結果;老師線上解題,學生就在雲端上課;切片檢查系統,診斷學生答題分析;全省PR值統計;全國名師齊聚一堂;為學生量身訂做,針對個別缺點再加強;學生自行安排考試時間,最彈性的學習;有機會成為學生最喜歡的金牌教師">
+    <meta name="author" content="michaelyccc">
 	<link href='http://fonts.googleapis.com/css?family=Carrois+Gothic' rel='stylesheet' type='text/css'>
 
     <!-- Le HTML5 shim, for IE6-8 support of HTML5 elements -->
